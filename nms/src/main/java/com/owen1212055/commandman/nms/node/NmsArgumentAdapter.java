@@ -1,9 +1,9 @@
-package com.owen1212055.commandman.node;
+package com.owen1212055.commandman.nms.node;
 
 import com.mojang.brigadier.arguments.*;
-import com.owen1212055.commandman.*;
 import com.owen1212055.commandman.api.node.*;
 import com.owen1212055.commandman.api.node.argument.type.ArgumentType;
+import com.owen1212055.commandman.nms.*;
 import net.minecraft.commands.arguments.*;
 
 import java.util.*;

@@ -1,4 +1,4 @@
-package com.owen1212055.commandman.node;
+package com.owen1212055.commandman.nms.node;
 
 import com.owen1212055.commandman.api.*;
 import com.owen1212055.commandman.api.node.*;
@@ -6,7 +6,7 @@ import com.owen1212055.commandman.api.node.argument.*;
 import com.owen1212055.commandman.api.node.argument.type.*;
 import com.owen1212055.commandman.api.node.command.*;
 import com.owen1212055.commandman.api.node.literal.*;
-import com.owen1212055.commandman.node.impl.*;
+import com.owen1212055.commandman.nms.node.impl.*;
 
 public class NmsNodeAdapter implements NodeAdapter {
 

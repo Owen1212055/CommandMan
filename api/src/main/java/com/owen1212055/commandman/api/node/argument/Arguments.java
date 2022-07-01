@@ -1,5 +1,6 @@
 package com.owen1212055.commandman.api.node.argument;
 
+import com.owen1212055.commandman.api.CommandPlatforms;
 import com.owen1212055.commandman.api.node.*;
 import com.owen1212055.commandman.api.node.argument.type.*;
 
@@ -7,15 +8,7 @@ import java.util.*;
 
 public class Arguments {
 
-    private static ArgumentAdapter adapter;
-
-    public static void setAdapter(ArgumentAdapter nodeAdapter) {
-        if (adapter != null) {
-            throw new IllegalStateException("Can't reset singleton!");
-        }
-
-        adapter = nodeAdapter;
-    }
+    private static final ArgumentAdapter adapter = CommandPlatforms.getPlatform().getArgumentAdapter();
 
     public static ArgumentType<String> string() {
         return adapter.string();

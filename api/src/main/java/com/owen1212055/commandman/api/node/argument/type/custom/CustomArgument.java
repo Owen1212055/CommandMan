@@ -8,7 +8,9 @@ public interface CustomArgument<T> extends ArgumentType<T>, ArgumentSuggestor {
 
     T parse(String string) throws ArgumentParsingException;
 
-    ParseType getParseType();
+    default ParseType getParseType() {
+        return ParseType.WORD;
+    }
 
     default ArgumentType<?> getClientCompletion() {
         return switch (getParseType()) {

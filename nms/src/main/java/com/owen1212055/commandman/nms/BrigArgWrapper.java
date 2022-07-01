@@ -1,7 +1,7 @@
-package com.owen1212055.commandman;
+package com.owen1212055.commandman.nms;
 
 import com.mojang.brigadier.arguments.*;
-import com.owen1212055.commandman.node.*;
+import com.owen1212055.commandman.nms.node.BrigArgumentType;
 
 public class BrigArgWrapper<T> implements BrigArgumentType<T> {
 

@@ -1,8 +1,8 @@
-package com.owen1212055.commandman.node.impl;
+package com.owen1212055.commandman.nms.node.impl;
 
 import com.owen1212055.commandman.api.node.argument.*;
 import com.owen1212055.commandman.api.node.argument.type.*;
-import com.owen1212055.commandman.node.*;
+import com.owen1212055.commandman.nms.node.SimpleNode;
 
 public class ArgumentNodeImpl<T> extends SimpleNode implements ArgumentNode<T> {
 

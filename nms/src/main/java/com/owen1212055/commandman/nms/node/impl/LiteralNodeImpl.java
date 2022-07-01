@@ -1,7 +1,7 @@
-package com.owen1212055.commandman.node.impl;
+package com.owen1212055.commandman.nms.node.impl;
 
 import com.owen1212055.commandman.api.node.literal.*;
-import com.owen1212055.commandman.node.*;
+import com.owen1212055.commandman.nms.node.SimpleNode;
 
 public class LiteralNodeImpl extends SimpleNode implements LiteralNode {
 

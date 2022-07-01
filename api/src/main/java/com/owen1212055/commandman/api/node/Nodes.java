@@ -1,23 +1,16 @@
 package com.owen1212055.commandman.api.node;
 
-import com.owen1212055.commandman.api.*;
-import com.owen1212055.commandman.api.node.argument.*;
-import com.owen1212055.commandman.api.node.argument.type.*;
-import com.owen1212055.commandman.api.node.command.*;
-import com.owen1212055.commandman.api.node.literal.*;
+import com.owen1212055.commandman.api.Command;
+import com.owen1212055.commandman.api.CommandPlatforms;
+import com.owen1212055.commandman.api.node.argument.ArgumentNode;
+import com.owen1212055.commandman.api.node.argument.Arguments;
+import com.owen1212055.commandman.api.node.argument.type.ArgumentType;
+import com.owen1212055.commandman.api.node.command.CommandNode;
+import com.owen1212055.commandman.api.node.literal.LiteralNode;
 
 public class Nodes {
 
-    private static NodeAdapter adapter;
-
-    public static void setAdapter(NodeAdapter nodeAdapter) {
-        if (adapter != null) {
-            throw new IllegalStateException("Can't reset singleton!");
-        }
-
-        adapter = nodeAdapter;
-    }
-
+    private static final NodeAdapter adapter = CommandPlatforms.getPlatform().getNodeAdapter();
 
     public static <T> ArgumentNode<T> of(String name, ArgumentType<T> type) {
         return adapter.of(name, type);

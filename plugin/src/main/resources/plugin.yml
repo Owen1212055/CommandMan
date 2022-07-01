@@ -1,5 +1,5 @@
 name: CommandMan
 version: '1.0'
-main: com.owen1212055.commandman.CommandMan
+main: com.owen1212055.commandman.plugin.CommandMan
 api-version: 1.18
 authors: [ Owen1212055 ]

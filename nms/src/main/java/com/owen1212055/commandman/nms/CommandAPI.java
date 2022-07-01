@@ -1,4 +1,4 @@
-package com.owen1212055.commandman;
+package com.owen1212055.commandman.nms;
 
 import com.mojang.brigadier.arguments.*;
 import com.mojang.brigadier.builder.*;
@@ -13,14 +13,14 @@ import com.owen1212055.commandman.api.node.argument.type.custom.suggestor.*;
 import com.owen1212055.commandman.api.node.command.CommandNode;
 import com.owen1212055.commandman.api.node.literal.*;
 import com.owen1212055.commandman.api.permission.*;
-import com.owen1212055.commandman.node.*;
+import com.owen1212055.commandman.nms.node.*;
 import io.papermc.paper.adventure.*;
 import net.minecraft.commands.*;
 import net.minecraft.server.*;
 import org.bukkit.*;
 import org.bukkit.command.*;
-import org.bukkit.craftbukkit.v1_18_R2.command.*;
-import org.bukkit.craftbukkit.v1_18_R2.scheduler.*;
+import org.bukkit.craftbukkit.v1_19_R1.command.VanillaCommandWrapper;
+import org.bukkit.craftbukkit.v1_19_R1.scheduler.MinecraftInternalPlugin;
 import org.bukkit.entity.*;
 import org.bukkit.plugin.*;
 import org.bukkit.scheduler.*;

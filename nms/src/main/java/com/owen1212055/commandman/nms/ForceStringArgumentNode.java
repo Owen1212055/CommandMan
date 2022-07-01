@@ -1,4 +1,4 @@
-package com.owen1212055.commandman;
+package com.owen1212055.commandman.nms;
 
 import com.mojang.brigadier.arguments.*;
 import com.mojang.brigadier.builder.*;

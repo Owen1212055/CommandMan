@@ -1,4 +1,4 @@
-package com.owen1212055.commandman.node.impl;
+package com.owen1212055.commandman.nms.node.impl;
 
 import com.owen1212055.commandman.api.*;
 import com.owen1212055.commandman.api.node.*;
